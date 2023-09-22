@@ -14,6 +14,8 @@
 		489013632ABDDD74001EB259 /* CompileErrorNotunderstandTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 489013622ABDDD74001EB259 /* CompileErrorNotunderstandTests.swift */; };
 		4890136D2ABDDD74001EB259 /* CompileErrorNotunderstandUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4890136C2ABDDD74001EB259 /* CompileErrorNotunderstandUITests.swift */; };
 		4890136F2ABDDD74001EB259 /* CompileErrorNotunderstandUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4890136E2ABDDD74001EB259 /* CompileErrorNotunderstandUITestsLaunchTests.swift */; };
+		4890137D2ABDDDAB001EB259 /* SFSymbolsMacro in Frameworks */ = {isa = PBXBuildFile; productRef = 4890137C2ABDDDAB001EB259 /* SFSymbolsMacro */; };
+		4890137F2ABDDDC0001EB259 /* Symbol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4890137E2ABDDDC0001EB259 /* Symbol.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,6 +46,7 @@
 		489013682ABDDD74001EB259 /* CompileErrorNotunderstandUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CompileErrorNotunderstandUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		4890136C2ABDDD74001EB259 /* CompileErrorNotunderstandUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CompileErrorNotunderstandUITests.swift; sourceTree = "<group>"; };
 		4890136E2ABDDD74001EB259 /* CompileErrorNotunderstandUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CompileErrorNotunderstandUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		4890137E2ABDDDC0001EB259 /* Symbol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Symbol.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -51,6 +54,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4890137D2ABDDDAB001EB259 /* SFSymbolsMacro in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -96,6 +100,7 @@
 			children = (
 				489013512ABDDD73001EB259 /* CompileErrorNotunderstandApp.swift */,
 				489013532ABDDD73001EB259 /* ContentView.swift */,
+				4890137E2ABDDDC0001EB259 /* Symbol.swift */,
 				489013552ABDDD74001EB259 /* Assets.xcassets */,
 				489013572ABDDD74001EB259 /* Preview Content */,
 			);
@@ -143,6 +148,9 @@
 			dependencies = (
 			);
 			name = CompileErrorNotunderstand;
+			packageProductDependencies = (
+				4890137C2ABDDDAB001EB259 /* SFSymbolsMacro */,
+			);
 			productName = CompileErrorNotunderstand;
 			productReference = 4890134E2ABDDD73001EB259 /* CompileErrorNotunderstand.app */;
 			productType = "com.apple.product-type.application";
@@ -215,6 +223,9 @@
 				Base,
 			);
 			mainGroup = 489013452ABDDD73001EB259;
+			packageReferences = (
+				4890137B2ABDDDAB001EB259 /* XCRemoteSwiftPackageReference "SFSymbolsMacro" */,
+			);
 			productRefGroup = 4890134F2ABDDD73001EB259 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -259,6 +270,7 @@
 			files = (
 				489013542ABDDD73001EB259 /* ContentView.swift in Sources */,
 				489013522ABDDD73001EB259 /* CompileErrorNotunderstandApp.swift in Sources */,
+				4890137F2ABDDDC0001EB259 /* Symbol.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -588,6 +600,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		4890137B2ABDDDAB001EB259 /* XCRemoteSwiftPackageReference "SFSymbolsMacro" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/lukepistrol/SFSymbolsMacro.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 0.4.1;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		4890137C2ABDDDAB001EB259 /* SFSymbolsMacro */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 4890137B2ABDDDAB001EB259 /* XCRemoteSwiftPackageReference "SFSymbolsMacro" */;
+			productName = SFSymbolsMacro;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 489013462ABDDD73001EB259 /* Project object */;
 }
